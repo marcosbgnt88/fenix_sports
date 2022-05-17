@@ -41,7 +41,8 @@
     
     list-style: none;
     display:flex;
-    flex-direction: row;   
+    flex-direction: row;
+       
 
 }
 .logos_sociales{
@@ -49,6 +50,7 @@
     grid-area: sociales;
     display:flex;
     justify-content: flex-end;
+    align-items: end;
     
     
 }
