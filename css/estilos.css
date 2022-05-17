@@ -11,7 +11,9 @@
     grid-template-rows: 1fr;
 
     grid-template-areas: 
-    "logo   sociales";
+    "logo   sociales"
+    
+    ;
     
     
 }
@@ -51,6 +53,16 @@
     
 }
 
+.btn-primary {
+
+    width: fit-content;
+    background-color: black;
+}
+.btn{
+    display: block;
+
+
+}
 .barra_de_navegacion{
     
     list-style: none;
@@ -76,6 +88,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+ul{
+
+    padding-left: 0;
+}
+
+
+
 .barra_de_navegacion_futbol{
     
     list-style: none;
@@ -99,7 +119,13 @@
 .nav{
 
     background-color: black;
+    display: block;
     
+}
+
+.table{
+
+    color:white;
 }
 
 .nav ul li a{
@@ -108,11 +134,19 @@
     color: white;
 
 }
+a{
+
+    text-decoration: none;
+    color: white;
+}
 .nav ul li a:hover{
     
-    color: red;
+    color: blue;
+    
 
 }
+
+
 
 .contenedor__principal{
 

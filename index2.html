@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fenix Sports</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
-
 <body id="inicio">
 
     <header class="header">
         <div class="imagen_logo">
 
-            <img src="../imagenes/Fenix.png" alt="logo" id="logo" />
+            <img src="imagenes/Fenix.png"alt="logo" id="logo"/>
 
         </div>
-        <div class="logos_sociales">
+        <div class="logos_sociales" >
 
             <ul class="redesSociales">
-                <li><a href=http://www.instagram.com target="_blank"> <img src="../imagenes/instagram.png"
-                            class="imagenesPortada"></a></li>
-                <li><a href=http://www.twitch.com target="_blank"> <img src="../imagenes/twitch.png"
-                            class="imagenesPortada"></a></li>
-                <li><a href=https://www.twitter.com target="_blank"> <img src="../imagenes/twitter.png"
-                            class="imagenesPortada"></a></li>
-                <li><a href=https://www.youtoube.com target="_blank"> <img src="../imagenes/youtube.png"
-                            class="imagenesPortada"></a></li>
-                <li><a href=https://www.facebook.com target="_blank"> <img src="../imagenes/Facebook.png"
-                            class="imagenesPortada"></a></li>
-
+                <li><a href=http://www.instagram.com target="_blank"> <img src="imagenes/instagram.png" class="imagenesPortada"></a></li>
+                <li><a href=http://www.twitch.com target="_blank"> <img src="imagenes/twitch.png" class="imagenesPortada"></a></li>
+                <li><a href=https://www.twitter.com target="_blank"> <img src="imagenes/twitter.png" class="imagenesPortada"></a></li>
+                <li><a href=https://www.youtoube.com target="_blank"> <img src="imagenes/youtube.png" class="imagenesPortada"></a></li>
+                <li><a href=https://www.facebook.com target="_blank"> <img src="imagenes/Facebook.png" class="imagenesPortada"></a></li>
+                 
             </ul>
 
         </div>
-
-
-
+           
+      
+    
     </header>
 
-    <nav class="nav">
-
+    <nav class="nav" >
+        
         <ul class="barra_de_navegacion">
-            <li><a href=../index.html>Home</a></li>
+            <li><a href=index.html>Home</a></li>
             <li><a href=paginas/futbol.html>Futbol</a></li>
             <li><a href=paginas/tenis.html>Tenis</a></li>
             <li><a href=paginas/formula1.html>Formula1</a></li>
             <li><a href=paginas/motoGP.html>MotoGP</a></li>
-            <li><a href=paginas/nba.html>NBA</a></li>
+             <li><a href=paginas/nba.html>NBA</a></li>
         </ul>
 
     </nav>
 
-    <main>
+    
+  
+    
+    <main class="contenedor__principal">
 
 
+        <section class="abuelo_futbol">
 
-        <section class="noticias_padre">
-
-            <article class="futbol__padre2" id="futbolpadre2">
+            <article class="futbol__padre">
                 <img src=""alt=""/>
 
                 
 
-                    <h2 class="titulo__futbol">TITULO DE LA NOTICIA</h2>
+                    <h2 class="titulo__futbol"><a href=paginas/articulos.html>TITULO DE LA NOTICIA</a></h2>
 
                     <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis ad culpa animi quos 
                         aperiam cupiditate 
@@ -76,11 +72,15 @@
                 
             </article>
 
-            <article class="noticia__tenis2">
+        </section>
+
+        <section class="abuelo_tenis">
+            
+            <article class="noticia__tenis">
                 <img src=""alt=""/>
 
                 
-                    <h2 class="titulo__tenis">TITULO DE LA NOTICIA</h2>
+                    <h2 class="titulo__tenis"><a href=paginas/articulos.html>TITULO DE LA NOTICIA</a></h2>
 
                     <p class="parrafo__tenis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis ad culpa animi quos 
                         aperiam cupiditate 
@@ -92,12 +92,16 @@
                 
                 
             </article>
+        
+        </section>
 
-            <article class="noticia__formula2">
+        <section class="abuelo_formula">
+
+            <article class="noticia__formula">
                 <img src=""alt=""/>
 
                 
-                    <h2 class="titulo__formula">TITULO DE LA NOTICIA</h2>
+                    <h2 class="titulo__formula"><a href="/paginas/articulos.html">TITULO DE LA NOTICIA</a></h2>
                     <p class="parrafo__formula">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis ad culpa animi quos 
                         aperiam cupiditate 
                     incidunt quibusdam facilis assumenda laborum earum, maiores suscipit dolor? Ad odio minus quia ipsa!Lorem 
@@ -109,11 +113,15 @@
                 
             </article>
 
-            <article class="noticia__moto2">
+        </section>
+
+        <section class="abuelo_moto">
+
+            <article class="noticia__moto">
                 <img src=""alt=""/>
 
                 
-                    <h2 class="titulo__moto">TITULO DE LA NOTICIA</h2>
+                    <h2 class="titulo__moto"><a href=paginas/articulos.html>TITULO DE LA NOTICIA</a></h2>
                     <p class="parrafo__moto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis ad culpa animi quos aperiam cupiditate 
                         incidunt quibusdam facilis assumenda laborum earum, maiores suscipit dolor? Ad odio minus quia ipsa!moto</p>
 
@@ -121,15 +129,8 @@
                 
             </article>
 
-
-
         </section>
     </main>
-
-
-
-
-
 
     <aside>
 
@@ -141,16 +142,15 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href=paginas/preguntasFrecuentes.html>FAQ</a></li>
             <li><a href=paginas/apuestas.html>Apuestas</a></li>
-
-
+            
+             
         </ul>
-
+        
 
     </footer>
 
 
 
-
+    
 </body>
-
 </html>
