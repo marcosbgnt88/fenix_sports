@@ -1,624 +1,432 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas: 
-    "logo   sociales"
-    
-    ;
-    
-    
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo   sociales";
 }
 
-#logo{
-
-    height: 200px;
-    width: 300px;
-    
-}
-.imagen_logo{
-
-    grid-area: logo;
+#logo {
+  height: 200px;
+  width: 300px;
 }
 
-.imagenesPortada{
-    
-    height: 50px;
-    width: 50px;
-    
+.imagen_logo {
+  grid-area: logo;
 }
 
-
-.redesSociales{
-    
-    list-style: none;
-    display:flex;
-    flex-direction: row;
-       
-
+.imagenesPortada {
+  height: 50px;
+  width: 50px;
 }
-.logos_sociales{
 
-    grid-area: sociales;
-    display:flex;
-    justify-content: flex-end;
-    align-items: end;
-    
-    
+.redesSociales {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.logos_sociales {
+  grid-area: sociales;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 .btn-primary {
-
-    width: fit-content;
-    background-color: black;
-}
-.btn{
-    display: block;
-
-
-}
-.barra_de_navegacion{
-    
-    list-style: none;
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-     margin-top: 1rem;
-     margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-    
+  width: fit-content;
+  background-color: black;
 }
 
-.barra_de_navegacion li{
-
-    padding-left: 1rem;
-    padding-right: 1rem;
+.btn {
+  display: block;
 }
 
-ul{
-
-    padding-left: 0;
+.barra_de_navegacion {
+  list-style: none;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
+.barra_de_navegacion li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
+ul {
+  padding-left: 0;
+}
 
-.barra_de_navegacion_futbol{
-    
-    list-style: none;
-    font-size: x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 500px;
-    margin-right: 500px;
-     margin-top: 1rem;
-    
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.barra_de_navegacion_futbol {
+  list-style: none;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
-    
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.nav {
+  background-color: black;
+  display: block;
+}
+
+.table {
+  color: white;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li a:hover {
+  color: blue;
+}
+
+.contenedor__principal {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 4fr 4fr;
+  grid-template-areas: "tenis futbol" "formula moto";
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.noticias_padre {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 1.5fr;
+  grid-template-rows: 4fr 4fr 4fr 4fr;
+  grid-template-areas: ".  futbol2 ." ".  tenis2  ." ".  formula2    ." ".  moto2   .";
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.futbol__padre {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.abuelo_futbol {
+  grid-area: futbol;
+}
+
+.futbol__padre2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  grid-area: futbol2;
+}
+
+.titulo__futbol {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.parrafo {
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.noticia__tenis {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.abuelo_tenis {
+  grid-area: tenis;
+}
+
+.noticia__tenis2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  grid-area: tenis2;
+}
+
+.titulo__tenis {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.parrafo__tenis {
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.noticia__formula {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.abuelo_formula {
+  grid-area: formula;
+}
+
+.noticia__formula2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  grid-area: formula2;
+}
+
+.titulo__formula {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.parrafo__formula {
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.noticia__moto {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.abuelo_moto {
+  grid-area: moto;
+}
+
+.noticia__moto2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px solid blue;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  grid-area: moto2;
+}
+
+.titulo__moto {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.parrafo__moto {
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.premier {
+  color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 1rem;
+}
+
+.contenedor_tabla {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tabla {
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border: solid 2px black;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 1rem;
+  transform: translate(105%);
+  display: flex;
+  justify-content: center;
+}
+
+.espacio {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.main_futbol {
+  background: #0b0024;
+  background: linear-gradient(112deg, #0b0024 0%, #093779 35%, #041012 100%);
+}
+
+.tabla_tenis {
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border: solid 2px black;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 1rem;
+  transform: translateX(205%);
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer li a:hover {
+  color: red;
+}
+
+footer {
+  background-color: black;
+}
+
+.separacion_footer {
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #logo {
+    width: 100%;
+  }
+  .barra_de_navegacion {
+    display: flex;
     justify-content: space-between;
-    
-}
-
-.nav{
-
-    background-color: black;
-    display: block;
-    
-}
-
-.table{
-
-    color:white;
-}
-
-.nav ul li a{
-    
-    text-decoration: none;
-    color: white;
-
-}
-a{
-
-    text-decoration: none;
-    color: white;
-}
-.nav ul li a:hover{
-    
-    color: blue;
-    
-
-}
-
-
-
-.contenedor__principal{
-
-    display: grid;
-    grid-template-columns: 4fr 4fr  ;
-    grid-template-rows:  4fr 4fr;
-    grid-template-areas: 
-    "tenis futbol"
-    "formula moto"
-    ;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    
-}
-.noticias_padre{
-    
-    display: grid;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
-    grid-template-rows:  4fr 4fr 4fr 4fr;
-    grid-template-areas: 
-    
-    ".  futbol2 ."
-    ".  tenis2  ."
-    ".  formula2    ."
-    ".  moto2   ."
-;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    
-
-    
-}
-
-
-.futbol__padre{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   border: 5px solid blue;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-    
-}
-.abuelo_futbol{
-
-    grid-area: futbol;
-}
-
-.futbol__padre2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue;
-     color: white;
-     background-color:black;
-     padding-left: 0.5rem;
-     padding-right: 0.5rem;
-     padding-top: 0.5rem;
-     padding-bottom: 0.5rem;
-     grid-area: futbol2;
- }
-
-
-.titulo__futbol{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    text-align: center;
-   
-}
-
-.parrafo{
-
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-}
-
-.noticia__tenis{
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue ;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-    
-}
-
-.abuelo_tenis{
-
-    grid-area: tenis;
-}
-.noticia__tenis2{
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue ;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-    grid-area: tenis2;
-   
-}
-
-
-
-.titulo__tenis{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    text-align: center;
-}
-
-.parrafo__tenis{
-
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- 
-}
-
-.noticia__formula{
- 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-    
-}
-.abuelo_formula{
-
-    grid-area: formula;
-}
-.noticia__formula2{
- 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-   grid-area: formula2;
-}
-
-
-
-.titulo__formula{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-   text-align: center;
-
-}
-
-.parrafo__formula{
-
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.noticia__moto{
-
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-
-}
-
-.abuelo_moto{
-
-    grid-area: moto;
-}
-
-.noticia__moto2{
-
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 5px solid blue;
-    color: white;
-    background-color:black;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-    grid-area: moto2;
-}
-
-
-.titulo__moto{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    text-align: center;
-    
-}
-
-.parrafo__moto{
-
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-}
-.footer{
-
-    
-    list-style: none;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-    
-}
-.footer li{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.footer  li a{
-
-    text-decoration: none;
-    color: white;
-}
-.footer  li a:hover{
-
-    color: red;
-}
-
-footer{
-
-    background-color: black;
-}
-
-.premier{
-
-    color:white;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 1rem;
-
-    
-}
-.contenedor_tabla{
-
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
-.tabla{
-
-    color:white;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    border: solid 2px black;
-    width: fit-content;
-    height: fit-content;
-    margin-top: 1rem;
-    transform: translate(105%);
-
-    display: flex;
-    justify-content: center;
-    
-}
-
-.tabla_tenis{
-
-
-
-        color:white;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        border: solid 2px black;
-        width: fit-content;
-        height: fit-content;
-        margin-top: 1rem;
-        transform: translateX(205%);
-    
-        display: flex;
-        justify-content: center;
-        
-    
-}
-
-.espacio{
-
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-.main_futbol{
-
-    background: rgb(11,0,36);
-    background: linear-gradient(112deg, rgba(11,0,36,1) 0%, rgba(9,55,121,1) 35%, rgb(4, 16, 18) 100%);
-}
-
-.separacion_footer{
-
-    padding-top: 1rem;
-}
-
-
-
-
-.tuvieja{
-
-    grid-area: tuvieja;
-}
-
-.tuvieja2{
-
-    grid-area: tuvieja2;
-}
-
-.tuvieja3{
-
-    grid-area: tuvieja3;
-}
-.tuvieja4{
-
-    grid-area: tuvieja4;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px){
-
-    #logo{
-
-        
-        width: 100%;
-    }    
-    
-    .barra_de_navegacion{
-        
-       
-        display: flex;
-        justify-content: space-between;
-        
-        
-        
-    }
-
-    .barra_de_navegacion li a {
-
-        font-size: 15px;
-        
-    } 
-    .barra_de_navegacion li  {
-
-        padding-left: 0;
-        padding-right: 0;
-        
-    } 
-.futbol__padre{
-    
+  }
+  .barra_de_navegacion li a {
+    font-size: 15px;
+  }
+  .barra_de_navegacion li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .futbol__padre {
     overflow: hidden;
-    ;
-}
-.noticia__tenis{
-
-    
+  }
+  .noticia__tenis {
     overflow: hidden;
-
-}
-
-.noticia__formula{
-
-    
+  }
+  .noticia__formula {
     overflow: hidden;
-}
-
-.noticia__moto{
-
-   
+  }
+  .noticia__moto {
     overflow: hidden;
     margin-bottom: 1rem;
-}
-
-.contenedor__principal{
-
+  }
+  .contenedor__principal {
     display: flex;
     flex-direction: column;
-
-    
-}
-.futbol__padre2{
-    
+  }
+  .futbol__padre2 {
     overflow: hidden;
-    ;
-}
-.noticia__tenis2{
-
-    
+  }
+  .noticia__tenis2 {
     overflow: hidden;
-
-}
-
-.noticia__formula2{
-
-    
+  }
+  .noticia__formula2 {
     overflow: hidden;
-}
-
-.noticia__moto2{
-
-   
+  }
+  .noticia__moto2 {
     overflow: hidden;
     margin-bottom: 1rem;
-}
-
-.noticias_padre{
-
+  }
+  .noticias_padre {
     display: flex;
     flex-direction: column;
-
-    
-}
-.header{
-
+  }
+  .header {
     display: flex;
     flex-direction: column;
-}
-
-
-.imagenesPortada{
-
-    height:  35px;
+  }
+  .imagenesPortada {
+    height: 35px;
     width: 35px;
-}
-
-
-.logos_sociales{
-
+  }
+  .logos_sociales {
     display: flex;
     justify-content: center;
-
+  }
 }
-
-
-
-}
+/*# sourceMappingURL=estilos.css.map */

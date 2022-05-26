@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo   sociales";
+  }
+  
+  #logo {
+    height: 200px;
+    width: 300px;
+  }
+  
+  .imagen_logo {
+    grid-area: logo;
+  }
+  
+  .imagenesPortada {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .redesSociales {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logos_sociales {
+    grid-area: sociales;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  
+  .btn-primary {
+    width: fit-content;
+    background-color: black;
+  }
+  
+  .btn {
+    display: block;
+  }
+  
+  .barra_de_navegacion {
+    list-style: none;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .barra_de_navegacion li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  .barra_de_navegacion_futbol {
+    list-style: none;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .nav {
+    background-color: black;
+    display: block;
+  }
+  
+  .table {
+    color: white;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav ul li a:hover {
+    color: blue;
+  }

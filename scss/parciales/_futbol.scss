@@ -1,0 +1,43 @@
+.premier{
+
+    color:white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1rem;
+
+    
+}
+.contenedor_tabla{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.tabla{
+
+    color:white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border: solid 2px black;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1rem;
+    transform: translate(105%);
+
+    display: flex;
+    justify-content: center;
+    
+}
+.espacio{
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.main_futbol{
+
+    background: rgb(11,0,36);
+    background: linear-gradient(112deg, rgba(11,0,36,1) 0%, rgba(9,55,121,1) 35%, rgb(4, 16, 18) 100%);
+}

@@ -1,0 +1,117 @@
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    #logo{
+
+        
+        width: 100%;
+    }    
+    
+    .barra_de_navegacion{
+        
+       
+        display: flex;
+        justify-content: space-between;
+        
+        
+        
+    }
+
+    .barra_de_navegacion li a {
+
+        font-size: 15px;
+        
+    } 
+    .barra_de_navegacion li  {
+
+        padding-left: 0;
+        padding-right: 0;
+        
+    } 
+.futbol__padre{
+    
+    overflow: hidden;
+    ;
+}
+.noticia__tenis{
+
+    
+    overflow: hidden;
+
+}
+
+.noticia__formula{
+
+    
+    overflow: hidden;
+}
+
+.noticia__moto{
+
+   
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.contenedor__principal{
+
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.futbol__padre2{
+    
+    overflow: hidden;
+    ;
+}
+.noticia__tenis2{
+
+    
+    overflow: hidden;
+
+}
+
+.noticia__formula2{
+
+    
+    overflow: hidden;
+}
+
+.noticia__moto2{
+
+   
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.noticias_padre{
+
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.header{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imagenesPortada{
+
+    height:  35px;
+    width: 35px;
+}
+
+
+.logos_sociales{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+}
